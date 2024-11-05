@@ -1,9 +1,8 @@
 ---
-title: "Getting started"
-description: "Hit the ground running."
-date: "2024-03-22"
----
-
+title: "Arch App Installer"
+description: "the blog."
+date: "2024-11-5"
+draft: false
 ---
 
 # Top 10 Applications for Linux Users
@@ -55,4 +54,3 @@ Krita is a professional open-source painting program designed for artists. With 
 These ten applications showcase the diversity and capability of Linux software, catering to different user needs—from graphic design and development to everyday productivity. Whether you're a seasoned Linux user or just starting, these tools will enhance your experience and help you get the most out of your system.
 
 *What are your favorite Linux applications? Let us know in the comments below!*
-
