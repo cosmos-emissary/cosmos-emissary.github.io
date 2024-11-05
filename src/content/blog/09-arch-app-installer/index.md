@@ -5,7 +5,7 @@ date: "2024-11-5"
 draft: false
 ---
 
-# Top 10 Applications for Linux Users
+## Top 10 Applications for Linux Users
 
 Linux is known for its versatility and robustness, making it a popular choice among developers, system administrators, and everyday users alike. With a wealth of applications available, users can customize their experience to fit their needs. Here are ten must-have applications for any Linux user.
 
