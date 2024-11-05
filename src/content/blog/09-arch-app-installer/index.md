@@ -1,11 +1,8 @@
 ---
-title: "Top 10 Applications for Linux Users"
-description: "A list of must-have applications for Linux users, covering everything from productivity to multimedia."
-publishDate: "2024-11-05"
-author: "Your Name"
-tags: ["Linux", "Applications", "Software", "Open-source"]
+title: "Getting started"
+description: "Hit the ground running."
+date: "2024-03-22"
 ---
-
 
 # Top 10 Applications for Linux Users
 
