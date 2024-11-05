@@ -4,52 +4,177 @@ description: "Hit the ground running."
 date: "2024-03-22"
 ---
 
-# Top 10 Applications for Linux Users
+---
 
-Linux is known for its versatility and robustness, making it a popular choice among developers, system administrators, and everyday users alike. With a wealth of applications available, users can customize their experience to fit their needs. Here are ten must-have applications for any Linux user.
+## Install astro-micro
 
-## 1. GIMP (GNU Image Manipulation Program)
+Clone the [Astro Micro repository](https://github.com/trevortylerlee/astro-micro.git).
 
-GIMP is a powerful, open-source image editing tool often considered a free alternative to Adobe Photoshop. With features like advanced photo retouching, image composition, and image authoring, GIMP is suitable for both beginners and professionals in graphic design.
+```sh
+git clone https://github.com/trevortylerlee/astro-micro.git my-astro-micro
+```
 
-## 2. VLC Media Player
+```sh
+cd my-astro-micro
+```
 
-VLC is a versatile media player that supports a wide range of audio and video formats. It can play almost any file type without needing additional codecs, making it a favorite among users who want a simple yet powerful multimedia experience.
+```sh
+npm i
+```
 
-## 3. LibreOffice
+```sh
+npm run build
+```
 
-LibreOffice is a comprehensive office suite that includes applications for word processing, spreadsheets, presentations, and more. It’s compatible with Microsoft Office formats, making it an excellent choice for users who need a reliable alternative to proprietary software.
+```sh
+npm run dev
+```
 
-## 4. Visual Studio Code
+## Customize the website metadata
 
-For developers, Visual Studio Code (VS Code) is an incredibly popular code editor that supports various programming languages and extensions. Its features like IntelliSense, debugging, and Git integration make it a favorite among coders looking for a lightweight yet powerful IDE.
+To change the website metadata, edit `src/consts.ts`.
 
-## 5. Terminal (Bash/Zsh)
+```ts
+// src/consts.ts
 
-The terminal is an essential tool for any Linux user, especially those who want to leverage the power of the command line. Bash and Zsh are popular shell environments that provide a robust interface for executing commands, scripting, and automating tasks.
+export const SITE: Site = {
+  NAME: "Astro Micro",
+  DESCRIPTION: "Astro Micro is an accessible theme for Astro.",
+  EMAIL: "trevortylerlee@gmail.com",
+  NUM_POSTS_ON_HOMEPAGE: 3,
+  NUM_PROJECTS_ON_HOMEPAGE: 3,
+};
+```
 
-## 6. Firefox
+| Field        | Req | Description                                          |
+| :----------- | :-- | :--------------------------------------------------- |
+| TITLE        | Yes | Displayed in header and footer. Used in SEO and RSS. |
+| DESCRIPTION  | Yes | Used in SEO and RSS.                                 |
+| EMAIL        | Yes | Displayed in contact section.                        |
+| NUM_POSTS    | Yes | Limit number of posts on home page.                  |
+| NUM_PROJECTS | Yes | Limit number of projects on home page.               |
 
-Mozilla Firefox is a widely used web browser known for its strong privacy features and customizability. With a variety of extensions and themes available, it allows users to tailor their browsing experience while staying secure online.
+---
 
-## 7. Thunderbird
+## Customize metadata for individual pages
 
-For managing email, Mozilla Thunderbird is a feature-rich, open-source email client. It supports multiple email accounts, offers powerful search capabilities, and includes a calendar feature through the Lightning extension, making it ideal for personal and professional use.
+```ts
+// src/consts.ts
 
-## 8. Slack
+export const ABOUT: Metadata = {
+  TITLE: "About",
+  DESCRIPTION: "Astro Micro is a fork of Astro Nano.",
+};
+```
 
-For team collaboration, Slack offers a user-friendly platform for communication and project management. Its Linux desktop application allows users to stay connected with teammates, share files, and integrate various productivity tools, streamlining workflows.
+| Field       | Req | Description                                    |
+| :---------- | :-- | :--------------------------------------------- |
+| TITLE       | Yes | Displayed in browser tab. Used in SEO and RSS. |
+| DESCRIPTION | Yes | Used in SEO and RSS.                           |
 
-## 9. Docker
+---
 
-Docker is a game-changer for developers and system administrators, providing a platform for automating the deployment of applications inside lightweight containers. It allows for consistent environments across development, testing, and production, simplifying software deployment.
+## Add your social media links
 
-## 10. Krita
+```ts
+// src/consts.ts
 
-Krita is a professional open-source painting program designed for artists. With a user-friendly interface and a wide range of brushes and tools, it’s perfect for creating digital art, illustrations, and animations.
+export const SOCIALS: Socials = [
+  {
+    NAME: "twitter-x",
+    HREF: "https://twitter.com/boogerbuttcheeks",
+  },
+  {
+    NAME: "github",
+    HREF: "https://github.com/trevortylerlee",
+  },
+  {
+    NAME: "linkedin",
+    HREF: "https://www.linkedin.com/in/trevortylerlee",
+  },
+];
+```
 
-## Conclusion
+| Field | Req | Description                             |
+| :---- | :-- | :-------------------------------------- |
+| NAME  | Yes | Displayed in contact section as a link. |
+| HREF  | Yes | External url to social media profile.   |
 
-These ten applications showcase the diversity and capability of Linux software, catering to different user needs—from graphic design and development to everyday productivity. Whether you're a seasoned Linux user or just starting, these tools will enhance your experience and help you get the most out of your system.
+## Deploy the site
 
-*What are your favorite Linux applications? Let us know in the comments below!*
+To set up RSS and Giscus, it's easier if the site is deployed and has a URL for you to use. Instantly deploy to Vercel or Netlify by clicking the buttons below.
+
+<div class="flex gap-2">
+  <a target="_blank" aria-label="Deploy with Vercel" href="https://vercel.com/new/clone?repository-url=https://github.com/trevortylerlee/astro-micro">
+    <img src="/deploy_vercel.svg" />
+  </a>
+  <a target="_blank" aria-label="Deploy with Netlify" href="https://app.netlify.com/start/deploy?repository=https://github.com/trevortylerlee/astro-micro">
+    <img src="/deploy_netlify.svg" />
+  </a>
+</div>
+
+To deploy manually see [Astro's docs](https://docs.astro.build/en/guides/deploy/).
+
+## Set up RSS
+
+Change the `site` option to the deployed site's URL.
+
+```js
+// astro.config.mjs
+
+export default defineConfig({
+  site: "https://astro-micro.vercel.app",
+  integrations: [tailwind(), sitemap(), mdx(), pagefind()],
+  markdown: {
+    shikiConfig: {
+      theme: "css-variables",
+    },
+  },
+});
+```
+
+## Set up Giscus
+
+Follow the steps at [giscus.app](https://giscus.app). Once you get your  custom Giscus script from that site, go to `Giscus.astro` and replace that script with your own.
+
+```js
+// src/components/Giscus.astro
+
+<script
+  is:inline
+  src="https://giscus.app/client.js"
+  data-repo="trevortylerlee/astro-micro"
+  data-repo-id="R_kgDOL_6l9Q"
+  data-category="Announcements"
+  data-category-id="DIC_kwDOL_6l9c4Cfk55"
+  data-mapping="pathname"
+  data-strict="0"
+  data-reactions-enabled="1"
+  data-emit-metadata="0"
+  data-input-position="top"
+  data-theme="preferred_color_scheme"
+  data-lang="en"
+  data-loading="lazy"
+  crossorigin="anonymous"
+  async></script>
+
+```
+
+To change the Giscus themes used, edit the `setGiscusTheme` function in `Head.astro`.
+
+```js
+// src/components/Head.astro
+
+const setGiscusTheme = () => {
+  const giscus = document.querySelector(".giscus-frame");
+
+  const isDark = document.documentElement.classList.contains("dark");
+
+  if (giscus) {
+    const url = new URL(giscus.src);
+    // Change "dark" and "light" to other Giscus themes
+    url.searchParams.set("theme", isDark ? "dark" : "light");
+    giscus.src = url.toString();
+  }
+};
+```
