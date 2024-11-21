@@ -5,12 +5,10 @@ date: "2024-03-26"
 demoURL: "https://astro-nano-demo.vercel.app"
 repoURL: "https://github.com/markhorn-dev/astro-nano"
 ---
-
-![Astro Nano](/astro-nano.png)
-
+## Astro Nano
 This application provides a user-friendly interface for installing predefined applications. It is written using GTK.I can add package if you can suggest any package. I use manjora so maybe this tool not work other distribution
 
-## Astro Nano
+
 
 To run this project, you need the following libraries installed:
 
