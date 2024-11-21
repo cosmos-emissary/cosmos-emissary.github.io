@@ -6,60 +6,77 @@ demoURL: "https://astro-nano-demo.vercel.app"
 repoURL: "https://github.com/markhorn-dev/astro-nano"
 ---
 
-## Archappinstaller
+![Astro Nano](/astro-nano.png)
 
-This application provides a user-friendly interface for installing predefined applications. It is written using GTK.I can add package if you can suggest any package. I use manjora so maybe this tool not work other distribution
+Astro Nano is a static, minimalist, lightweight, lightning fast portfolio and blog theme.
 
-## Requirements
+Built with Astro, Tailwind and Typescript, and no frameworks.
 
-To run this project, you need the following libraries installed:
+It was designed as an even more minimal theme than Mark Horn's popular theme [Astro Sphere](https://github.com/markhorn-dev/astro-sphere)
 
-- GTK 3
-- GLib
-- GIO
+## 🚀 Deploy your own
 
-### Installing Required Libraries on Arch Linux
+<div class="flex gap-2">
+  <a target="_blank" aria-label="Deploy with Vercel" href="https://vercel.com/new/clone?repository-url=https://github.com/markhorn-dev/astro-nano">
+    <img src="/deploy_vercel.svg" />
+  </a>
+  <a target="_blank" aria-label="Deploy with Netlify" href="https://app.netlify.com/start/deploy?repository=https://github.com/markhorn-dev/astro-nano">
+    <img src="/deploy_netlify.svg" />
+  </a>
+</div>
 
-You can install the necessary libraries using the following command:
+## 📋 Features
 
-```bash
-sudo pacman -S base-devel gtk3
-```
-### Project Setup
-##### Make git folder(If you do not make git folder, pinstall.sh cannot run).
-```bash
-mkdir git
-cd git
-```
-#### Clone the project:
+- ✅ 100/100 Lighthouse performance
+- ✅ Responsive
+- ✅ Accessible
+- ✅ SEO-friendly
+- ✅ Typesafe
+- ✅ Minimal style
+- ✅ Light/Dark Theme
+- ✅ Animated UI
+- ✅ Tailwind styling
+- ✅ Auto generated sitemap
+- ✅ Auto generated RSS Feed
+- ✅ Markdown support
+- ✅ MDX Support (components in your markdown)
 
-```bash
-git clone https://github.com/cosmos-emissary/archappinstaller.git
-cd archappinstaller
-```
-#### If you want compile the application
+## 💯 Lighthouse score
 
-```bash
-gcc -o application_installer application_installer.c `pkg-config --cflags --libs gtk+-3.0 gio-2.0 gdk-3.0`
-```
-#### Now we can add application folder to this program
-```bash
-cd $HOME/.local/share/applications/
-nano arch-app-installer.desktop
-```
-```
-[Desktop Entry]
-Version=1.0
-Type=Application
-Name=Arch App Installer
-Comment=Install various applications easily
-Exec=$HOME/git/archappinstaller/gtk_installer
-Icon=$HOME/git/archappinstaller/logo.jpg
-Terminal=false
-Categories=Utility;Application;
-```
-### Or you can use the script
-```bash
-chmod +x pinstall.sh
-./pinstall.sh
-```
+![Astro Nano Lighthouse Score](/astro-nano-lighthouse.jpg)
+
+## 🕊️ Lightweight
+
+No frameworks or added bulk
+
+## ⚡︎ Fast
+
+Rendered in ~40ms on localhost
+
+## 📄 Configuration
+
+The blog posts on the demo serve as the documentation and configuration.
+
+## 💻 Commands
+
+All commands are run from the root of the project, from a terminal:
+
+Replace npm with your package manager of choice. `npm`, `pnpm`, `yarn`, `bun`, etc
+
+| Command                   | Action                                            |
+| :------------------------ | :------------------------------------------------ |
+| `npm install`             | Installs dependencies                             |
+| `npm run dev`             | Starts local dev server at `localhost:4321`       |
+| `npm run dev:network`     | Starts local dev server on local network          |
+| `npm run sync`            | Generates TypeScript types for all Astro modules. |
+| `npm run build`           | Build your production site to `./dist/`           |
+| `npm run preview`         | Preview your build locally, before deploying      |
+| `npm run preview:network` | Preview build on local network                    |
+| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check`  |
+| `npm run astro -- --help` | Get help using the Astro CLI                      |
+| `npm run lint`            | Run ESLint                                        |
+| `npm run lint:fix`        | Auto-fix ESLint issues                            |
+
+## 🏛️ License
+
+MIT
