@@ -7,7 +7,6 @@ repoURL: "https://github.com/markhorn-dev/astro-nano"
 ---
 
 ## Archappinstaller
-![swappy-20241025_202403](https://github.com/user-attachments/assets/74fdb179-e88f-47cf-bec1-6fcf1a7b5ded)
 
 This application provides a user-friendly interface for installing predefined applications. It is written using GTK.I can add package if you can suggest any package. I use manjora so maybe this tool not work other distribution
 
