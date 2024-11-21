@@ -1,9 +1,9 @@
 ---
-title: "Arch App Installer"
-description: "You can install Top App when you set up your system"
-date: "11/21/2024"
+title: "Astro Nano"
+description: "Minimal portfolio and blog build with astro and no frameworks."
+date: "2024-03-26"
 demoURL: "https://astro-nano-demo.vercel.app"
-repoURL: "https://github.com/cosmos-emissary/archappinstaller"
+repoURL: "https://github.com/markhorn-dev/astro-nano"
 ---
 
 ## Archappinstaller
