@@ -2,6 +2,7 @@
 title: "Arch App Installer"
 description: "You can install Top App when you set up your system"
 date: "11/21/2024"
+demoURL: "https://astro-nano-demo.vercel.app"
 repoURL: "https://github.com/cosmos-emissary/archappinstaller"
 ---
 
