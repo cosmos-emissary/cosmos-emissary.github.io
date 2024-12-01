@@ -1,16 +1,14 @@
 ---
-title: "Blog Collection"
-description: "How to add posts to the blog."
-date: "2024-03-21"
+title: "Minimalist Adventure"
+description: "Minimalist Adventure Day 0"
+date: "2024-12-01"
 tags:
-  - tutorial
----
-
+  - minimalism
 ---
 
 ## Minimalist adventure Day 0
 I have chosen to be a minimalist person because nothing gives me pleasure. Is that important, Idk. But I know that I have to do this. Anyway lets roll out!
-![84d4fcaad0cbf6fad0c5c100df2fc515](https://github.com/user-attachments/assets/a061c3e1-86f8-4dce-9042-41d9c33b4715)
+![84d4fcaad0cbf6fad0c5c100df2fc515](https://cdn-prod.scalefast.com/public/assets/user/10751401/sample/84d4fcaad0cbf6fad0c5c100df2fc515.png)
 
 ## Make To Do List
 I'm using *** for this step because it's perfect, minimal and... anyway. I can do this on my site, which is really important. I set 4 to do because I am becoming minimalist.
