@@ -1,9 +1,7 @@
 ---
 title: "Minimalist Adventure"
 description: "Minimalist Adventure Day 0
-date: "2024-03-21"
-tags:
-  - minimalism
+date: "2024-12-1"
 ---
 
 ## Minimalist adventure Day 0
