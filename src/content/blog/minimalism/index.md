@@ -1,7 +1,11 @@
 ---
-title: "Minimalist Adventure"
-description: "Minimalist Adventure Day 0
-date: "2024-12-01"
+title: "Blog Collection"
+description: "How to add posts to the blog."
+date: "2024-03-21"
+tags:
+  - tutorial
+---
+
 ---
 
 ## Minimalist adventure Day 0
