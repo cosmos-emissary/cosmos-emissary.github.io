@@ -4,9 +4,7 @@ description: "Minimalist Adventure Day 0";
 date: "2024-12-01";
 draft: false;
 tags:
-  - dopamin
   - minimalism
-  - 7 day
 ---
 
 ## Minimalist adventure Day 0
